@@ -1,16 +1,9 @@
 import React from "react";
-import { LoginStyled } from "./utilities";
-import {
-  Typography,
-  Box,
-  Button,
-  Checkbox,
-  FormControlLabel,
-} from "@mui/material";
+import { Typography, Box, Button } from "@mui/material";
 import CustomInput from "../utilities/CustomInput";
 import ICON_EMAIL from "../../assets/icons/email.svg";
-import { ForgotPasswordStyled } from "./utilities";
-import { textAlign } from "@mui/system";
+import { ForgotPasswordStyled } from "./styled";
+import { Link } from "react-router-dom";
 
 const ForgotPassword = () => {
   return (
@@ -96,7 +89,16 @@ const ForgotPassword = () => {
           cursor: "pointer",
         }}
       >
-        Back to Login page
+        <Link
+          to="/"
+          style={{
+            textDecoration: "none",
+            marginLeft: "16px",
+            color: "#3259E8",
+          }}
+        >
+          Back to Login page
+        </Link>
       </Typography>
     </ForgotPasswordStyled>
   );

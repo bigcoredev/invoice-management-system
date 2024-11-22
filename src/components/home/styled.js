@@ -24,8 +24,8 @@ export const SignDialogStyled = styled("div")({
 
 export const LoginStyled = styled("div")({
   width: "580px",
-  height: "582px",
-  padding: "0px 0px 0px 0px",
+  height: "auto",
+  padding: "0px 0px 60px 0px",
   gap: "34px",
   borderRadius: "40px",
   backgroundColor: "white",
